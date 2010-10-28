@@ -10,11 +10,8 @@
      <script language="javascript" type="text/javascript">
 
         function init() {
-          alert('hey') ;
           gadgets.log("message") ;
-          alert('hey') ;
         }
-        
 
       gadgets.util.registerOnLoadHandler(init);     
      

@@ -35,7 +35,7 @@
       <menuContribution
             locationURI="menu:org.eclipse.ui.main.menu?after=additions">
          <menu
-               label="Sample Menu"
+               label="Open Social"
                mnemonic="M"
                id="org.eclipse.e4.opensocial.tests.menus.sampleMenu">
             <command
@@ -51,12 +51,27 @@
                id="org.eclipse.e4.opensocial.tests.toolbars.sampleToolbar">
             <command
                   commandId="org.eclipse.e4.opensocial.tests.commands.sampleCommand"
-                  icon="icons/sample.gif"
-                  tooltip="Say hello world"
+                  icon="icons/opensocial.gif"
+                  tooltip="Open Gadget in Dialog"
                   id="org.eclipse.e4.opensocial.tests.toolbars.sampleCommand">
             </command>
          </toolbar>
       </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="org.eclipse.e4.opensocial.tests"
+            name="OpenSocial">
+      </category>
+      <view
+            allowMultiple="true"
+            category="org.eclipse.e4.opensocial.tests"
+            class="org.eclipse.e4.opensocial.tests.views.SampleView"
+            icon="icons/opensocial.gif"
+            id="org.eclipse.e4.opensocial.tests.views.SampleView"
+            name="OpenSocial Sample View">
+      </view>
    </extension>
 
 </plugin>
